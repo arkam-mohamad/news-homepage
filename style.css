@@ -20,6 +20,9 @@ a{
 a:hover{
   color: hsl(35, 77%, 62%);
 }
+#menu{
+  display: none;
+}
 .nav-mobile{
   display: none;
 }
@@ -144,6 +147,9 @@ main img{
   .nav-links{
     display: none;
   }
+  #menu{
+    display: inline-block;
+  }  
   .nav-mobile{
     position: absolute;
     right: 100px;
