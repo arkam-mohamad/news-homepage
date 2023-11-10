@@ -1,1 +1,185 @@
+*{
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 100px;
+}
+.nav-links{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+a{
+  text-decoration: none;
+  font-size: 15px;
+  color: hsl(236, 13%, 42%);
+}
+a:hover{
+  color: hsl(35, 77%, 62%);
+}
+.nav-mobile{
+  display: none;
+}
+header{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  padding: 0 100px;
+}
+header > div:first-child{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+header img{
+  max-width: 100%;
+}
+header .container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+header .content{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+h1{
+  color: hsl(240, 100%, 5%);
+  font-size: 40px;
+  font-weight: 800;
+}
+p{
+  font-size: 15px;
+  color: hsl(236, 13%, 42%);
+}
+button{
+  align-self: start;
+  color: hsl(36, 100%, 99%);
+  background-color: hsl(5, 85%, 63%);
+  padding: 10px 20px;
+  border: 0;
+  letter-spacing: 3px;
+  font-size: 13px;
+}
+button:hover{
+  cursor: pointer;
+  background-color: hsl(240, 100%, 5%);
+}
+.new{
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: hsl(240, 100%, 5%);
+}
+.new > div{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.new h2{
+  color: hsl(35, 77%, 62%);
+  font-size: 32px;
+}
+.new h3{
+  color: hsl(36, 100%, 99%);
+  font-size: 20px;
+  font-weight: 700;
+}
+.new h3:hover{
+  color: hsl(35, 77%, 62%);
+  cursor: pointer;
+}
+.new p{
+  color: hsl(233, 8%, 79%);
+}
+hr{
+  border: 1px solid hsl(236, 13%, 42%);
+}
 
+main{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  padding: 50px 100px;
+}
+main .container{
+  display: flex;
+  gap: 15px;
+}
+main .content{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+main h2{
+  color: hsl(233, 8%, 79%);
+  font-weight: 800;
+  font-size: 28px;
+}
+main h3{
+  font-weight: 800;
+  color: hsl(240, 100%, 5%);
+  font-size: 18px;
+}
+main h3:hover{
+  color: hsl(5, 85%, 63%);
+  cursor: pointer;
+}
+main img{
+  width: 100px;
+  object-fit: contain;
+}
+
+
+
+
+@media screen and (max-width:650px) {
+  nav{
+    position: relative;
+  }
+  .nav-links{
+    display: none;
+  }
+  .nav-mobile{
+    position: absolute;
+    right: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 50px;
+    background-color: white;
+    width: 30%;
+    height: 100vh;
+    padding: 0 20px;
+  }
+  #close{
+    align-self: end;
+  }
+  .nav-mobile-links{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .nav-mobile a{
+    font-weight: 700;
+  }
+  .hidden{
+    display: none;
+  }
+  header{
+    display: flex;
+    flex-direction: column;
+  }
+  header .container{
+    display: flex;
+    flex-direction: column;
+  }
+  main{
+    display: flex;
+    flex-direction: column;
+  }
+}
